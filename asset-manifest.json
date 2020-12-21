@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/loanscontrol/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/loanscontrol/static/js/main.49332d86.chunk.js",
+    "main.js.map": "/loanscontrol/static/js/main.49332d86.chunk.js.map",
+    "runtime-main.js": "/loanscontrol/static/js/runtime-main.c09ba07b.js",
+    "runtime-main.js.map": "/loanscontrol/static/js/runtime-main.c09ba07b.js.map",
+    "static/js/2.162edb26.chunk.js": "/loanscontrol/static/js/2.162edb26.chunk.js",
+    "static/js/2.162edb26.chunk.js.map": "/loanscontrol/static/js/2.162edb26.chunk.js.map",
+    "static/js/3.d8c527e1.chunk.js": "/loanscontrol/static/js/3.d8c527e1.chunk.js",
+    "static/js/3.d8c527e1.chunk.js.map": "/loanscontrol/static/js/3.d8c527e1.chunk.js.map",
+    "index.html": "/loanscontrol/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/loanscontrol/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.162edb26.chunk.js.LICENSE.txt": "/loanscontrol/static/js/2.162edb26.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c09ba07b.js",
+    "static/js/2.162edb26.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.49332d86.chunk.js"
+  ]
+}
