@@ -1,4 +1,4 @@
-# Loans
+# Loans Control
 
 [https://brunorafael8.github.io/LoansControl/](https://brunorafael8.github.io/LoansControl/)
 
