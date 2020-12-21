@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { UserService } from "../services";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 import Table from "../components/Table";
+import { useUser } from "../context/UserContext";
+import { formatInstallments } from "../helpers/formatInstallments";
 
 const Wrapper = styled.section`
   display: flex;
@@ -64,7 +65,7 @@ const InfoValue = styled.span`
 
 const TableWrapper = styled.div`
   display: flex;
-  width: 70%;
+  width: 60%;
   align-self: center;
   flex-direction: column;
 `;
@@ -83,26 +84,16 @@ const TableTitle = styled.span`
 `;
 
 function HomePage() {
-  const [tableData, setTableData] = useState([]);
-  useEffect(() => {
-    UserService.fetchUser().then((response) => {
-      const newArray = response.data?.installments.map(
-        (i: {
-          value: string;
-          formatedValue: string;
-          payd: string;
-          dueDate: string;
-        }) => {
-          return {
-            formatedValue: i.formatedValue,
-            payd: i.payd,
-            dueDate: i.dueDate,
-          };
-        }
-      );
-      setTableData(newArray);
-    });
-  }, []);
+  const { userData } = useUser();
+
+  const {
+    installments,
+    amountPayd,
+    amountTaken,
+    totalAmountInTaxes,
+    monthlyInterest,
+  } = userData;
+
   return (
     <div>
       <Header />
@@ -112,25 +103,48 @@ function HomePage() {
           <ContentHeader>
             <Info>
               <InfoTitle>Total do Empréstimo:</InfoTitle>
-              <InfoValue>R$ 3232</InfoValue>
+              <InfoValue>
+                {amountTaken.toLocaleString("pt-br", {
+                  style: "currency",
+                  currency: "BRL",
+                })}
+              </InfoValue>
             </Info>
             <Info>
               <InfoTitle>Valor já Pago:</InfoTitle>
-              <InfoValue>R$ 3232</InfoValue>
+              <InfoValue>
+                {amountPayd.toLocaleString("pt-br", {
+                  style: "currency",
+                  currency: "BRL",
+                })}
+              </InfoValue>
             </Info>
             <Info>
               <InfoTitle>Juros Mensais:</InfoTitle>
-              <InfoValue>R$ 3232</InfoValue>
+              <InfoValue>
+                {monthlyInterest.toLocaleString("pt-br", {
+                  style: "currency",
+                  currency: "BRL",
+                })}
+              </InfoValue>
             </Info>
             <Info>
               <InfoTitle>Valor total dos Juros:</InfoTitle>
-              <InfoValue>R$ 3232</InfoValue>
+              <InfoValue>
+                {totalAmountInTaxes.toLocaleString("pt-br", {
+                  style: "currency",
+                  currency: "BRL",
+                })}
+              </InfoValue>
             </Info>
           </ContentHeader>
           <TableTitle>Parcelas</TableTitle>
 
           <TableWrapper>
-            <Table header={["VALOR", "PAGO", "CRIAÇÃO"]} data={tableData} />
+            <Table
+              header={["VALOR", "PAGO", "CRIAÇÃO"]}
+              data={formatInstallments(installments)}
+            />
           </TableWrapper>
         </Content>
       </Wrapper>
