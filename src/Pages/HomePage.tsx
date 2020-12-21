@@ -142,7 +142,7 @@ function HomePage() {
 
           <TableWrapper>
             <Table
-              header={["VALOR", "PAGO", "CRIAÇÃO"]}
+              header={["VALOR", "PAGO", "VENCiMENTO"]}
               data={formatInstallments(installments)}
             />
           </TableWrapper>
