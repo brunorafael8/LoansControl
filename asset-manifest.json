@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/LoansControl/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/LoansControl/static/js/main.3b6218ff.chunk.js",
-    "main.js.map": "/LoansControl/static/js/main.3b6218ff.chunk.js.map",
+    "main.js": "/LoansControl/static/js/main.e60d0b1f.chunk.js",
+    "main.js.map": "/LoansControl/static/js/main.e60d0b1f.chunk.js.map",
     "runtime-main.js": "/LoansControl/static/js/runtime-main.34da85ec.js",
     "runtime-main.js.map": "/LoansControl/static/js/runtime-main.34da85ec.js.map",
     "static/js/2.89121ad2.chunk.js": "/LoansControl/static/js/2.89121ad2.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.34da85ec.js",
     "static/js/2.89121ad2.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.3b6218ff.chunk.js"
+    "static/js/main.e60d0b1f.chunk.js"
   ]
 }
