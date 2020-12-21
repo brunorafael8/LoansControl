@@ -1,11 +1,12 @@
 import React from "react";
+import { UserProvider } from "./context/UserContext";
 import HomePage from "./Pages/HomePage";
 
 function App() {
   return (
-    <div>
+    <UserProvider>
       <HomePage />
-    </div>
+    </UserProvider>
   );
 }
 
