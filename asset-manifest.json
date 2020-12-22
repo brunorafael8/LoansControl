@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/LoansControl/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/LoansControl/static/js/main.e60d0b1f.chunk.js",
-    "main.js.map": "/LoansControl/static/js/main.e60d0b1f.chunk.js.map",
+    "main.css": "/LoansControl/static/css/main.342ff7a6.chunk.css",
+    "main.js": "/LoansControl/static/js/main.c76b2625.chunk.js",
+    "main.js.map": "/LoansControl/static/js/main.c76b2625.chunk.js.map",
     "runtime-main.js": "/LoansControl/static/js/runtime-main.34da85ec.js",
     "runtime-main.js.map": "/LoansControl/static/js/runtime-main.34da85ec.js.map",
-    "static/js/2.89121ad2.chunk.js": "/LoansControl/static/js/2.89121ad2.chunk.js",
-    "static/js/2.89121ad2.chunk.js.map": "/LoansControl/static/js/2.89121ad2.chunk.js.map",
+    "static/js/2.a414063a.chunk.js": "/LoansControl/static/js/2.a414063a.chunk.js",
+    "static/js/2.a414063a.chunk.js.map": "/LoansControl/static/js/2.a414063a.chunk.js.map",
     "static/js/3.d8c527e1.chunk.js": "/LoansControl/static/js/3.d8c527e1.chunk.js",
     "static/js/3.d8c527e1.chunk.js.map": "/LoansControl/static/js/3.d8c527e1.chunk.js.map",
     "index.html": "/LoansControl/index.html",
-    "static/css/main.6dea0f05.chunk.css.map": "/LoansControl/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.89121ad2.chunk.js.LICENSE.txt": "/LoansControl/static/js/2.89121ad2.chunk.js.LICENSE.txt"
+    "static/css/main.342ff7a6.chunk.css.map": "/LoansControl/static/css/main.342ff7a6.chunk.css.map",
+    "static/js/2.a414063a.chunk.js.LICENSE.txt": "/LoansControl/static/js/2.a414063a.chunk.js.LICENSE.txt",
+    "static/media/home.78c6e013.svg": "/LoansControl/static/media/home.78c6e013.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.34da85ec.js",
-    "static/js/2.89121ad2.chunk.js",
-    "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.e60d0b1f.chunk.js"
+    "static/js/2.a414063a.chunk.js",
+    "static/css/main.342ff7a6.chunk.css",
+    "static/js/main.c76b2625.chunk.js"
   ]
 }
